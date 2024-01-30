@@ -1,0 +1,121 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+
+/* ============== Variable css ----======== */
+:root{
+    --bg-bg:#EE7E01;
+    --white-bg: #fff;
+    --text-color: #6f6e6e;
+    --text-bg: #222222;
+    --bg-top: #EEF0F2;
+    --bg-bg-color: #174161;
+    --border-height: 3rem;
+    --main-gradient: linear-gradient(121deg, rgba(194, 13, 90, 1) 25% rgb(255 0 194 / 42%) 100%);
+    --biggest-font-size: 2.25rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    --md-1: .5rem;
+    --md-2: 1rem;
+    --md-3: 1.5;
+    --md-4: 2rem;
+    --md-5: 2.5rem;
+    --md-6: 3rem;
+    --z-tooltrip: 10;
+    --z-fixed: 100;
+}
+
+
+/* ============== general css ----======== */
+*, ::before, ::after{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behaviour: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-bg);
+    font-size: 13px;
+    font-weight: 400;
+    /* overflow: hidden; */
+    background: hsl(200deg 27% 98%);
+}
+
+img{
+    vertical-align: middle;
+    height: auto;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover{
+    text-decoration: none;
+    color: var(--white-bg);
+}
+
+ul,ol{
+    list-style: none;
+}
+
+button:focus{
+    outline: none;
+}
+
+
+h1, h2, h3, h4, h5, h6, p ,li, ul, span, label{
+    margin: 0;
+}
+
+ul{
+    padding: 0;
+    list-style: none;
+}
+
+ovh{
+    overflow: hidden;
+}
+
+table.table{
+    white-space: nowrap;
+}
+
+.di-btn{
+    color: aliceblue;
+    padding: .7rem;
+    font-weight: 500;
+    border-radius: 3px;
+    box-shadow: 0 6px 10px 1px #06041d4a;
+}
+
+.purple-gradient{
+    background: var(--bg-bg-color);
+}
+
+.bg-cta{
+    background: var(--bg-bg);
+}
+
+.bg-ctc{
+    background: linear-gradient(121deg, rgba(92, 26, 195) 25% rgb(136 25 206 / 95%) 100%);
+}
+.bg-ctc{
+    background: linear-gradient(121deg, rgba(26, 179, 195) 25% rgb(25 97 206 / 95%) 100%);
+}
+.bg-ctc{
+    background: linear-gradient(121deg, rgba(232, 202, 53) 25% rgb(206 125 25 / 95%) 100%);
+}

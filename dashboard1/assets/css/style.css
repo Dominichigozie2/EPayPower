@@ -1,0 +1,187 @@
+.content-wrapper {
+    margin-left: 240px;
+    margin-top: 120px;
+    transition: all .5s;
+    padding: 0 20px 0 20px;
+}
+
+.content-wrapper.hide {
+    margin-left: 0;
+}
+
+.wallet-balance {
+    border-radius: 10px;
+    padding-top: 10px;
+    box-shadow: -2px 3px 13px 0 #06041d4a;
+    /* height: 100%; */
+}
+
+.wallet-info{
+    padding: 22px 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-bg);
+}
+
+.wallet-icon{
+    font-size: 40px;
+    color: var(--bg-bg-color);
+}
+
+.wallet-info-sub{
+    font-size: 14px;
+    color: var(--bg-bg);
+    letter-spacing: 0.1em;
+    line-height: 18px;
+    font-weight: 500;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+}
+
+.wallet-info-amount{
+    font-weight: 500;
+    font-size: 1.5em;
+    line-height: 1;
+    letter-spacing: -0.02em;
+}
+
+.wallet-info.bdr-tl {
+    border-left: 1px solid #e6effb;
+}
+
+
+/*----------------- referral style ------------ */
+
+.ref-balance {
+    padding: 15px 20px;
+    color: var(--white-bg);
+}
+
+.ref-balance .ref {
+    display: flex;
+    align-items: center;
+}
+
+.ref-balance-icon {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    font-size: 30px;
+    flex-shrink: 0;
+    background: rgba(153, 208, 255, 0.2);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.ref-balance-text p {
+    text-transform: uppercase;
+    color: var(--bg-bg);
+    letter-spacing: 0.1em;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.ref-balance-text h2,
+.ref-total-text h2 {
+    font-weight: 500;
+    font-size: 1.5em;
+    line-height: 1;
+    letter-spacing: -0.02em;
+}
+
+.Pay-method .btn {
+    border: 1px solid var(--white-bg);
+    padding: 10px 15px;
+    color: var(--white-bg);
+    border-radius: 5px;
+}
+
+.ref-total-icon {
+    font-size: 14px;
+}
+
+
+/* ---------------- transaction history ----------- */
+.card-transaction{
+    border-radius: 10px;
+    box-shadow: -2px 3px 13px 0 #06041d4a;
+    color: var(--text-bg);
+
+    & .dark {
+        background-color: #eee;
+        padding: 10px 30px;
+        
+        & h5{
+            color: var(--text-bg);
+            font-size: 16px;
+            font-weight: 500;
+        }
+    }
+
+    & .trans-pad{
+        padding: 10px 30px;
+    }
+
+    & #income {
+        border-right: 1px solid #bbb;
+    }
+
+    & .money {
+        color: var(--text-bg);
+        font-weight: 600;
+    }
+
+    & .fa-long-arrow-down,
+    .fa-long-arrow-up {
+        padding: 10px;
+        background-color: #eee;
+        border-radius: 50%;
+        position: relative;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        font-size: 1rem;
+        color: #28df99    
+    }
+
+    & .fa-long-arrow-up {
+        color: #ffa500;
+    }
+
+    & .table thead th {
+        color: var(--text-bg);
+        font-size: 13px;
+    }
+
+    & .table thead th,
+    .table td,
+    .table th {
+        border: none;
+        overflow: auto auto;
+    }
+
+    & td .td-icons{
+        color: #fff;
+        background-color: var(--bg-bg);
+        padding: 7px;
+        border-radius: 50%;
+        margin-right: 5px;
+    }
+
+    & tbody tr td .fa-long-arrow-up,
+    tbody tr td .fa-long-arrow-down {
+        font-size: 10px;
+        padding: 5px;
+        height: 20px;
+        width: 20px;
+        margin-right: 5px;
+    }    
+
+}

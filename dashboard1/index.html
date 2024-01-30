@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dashboard</title>
+
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="../css/bootstrap-5.1.3-dist/bootstrap-5.1.3-dist/css/bootstrap.min.css">
+
+    <!--================= fontawesome css ==================-->
+    <link rel="stylesheet" href="./assets/icons/fontawesome/css/all.min.css">
+
+    <link rel="stylesheet" href="../icons/flaticon/flaticon.css">
+
+    <!-- ========= google font ============ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/layout.css">
+    <link rel="stylesheet" href="./assets/css/sass.css">
+
+</head>
+
+<body>
+
+    <div class="main-wrapper">
+        <!-- Top Navbar Start -->
+        <div class="header-container fixed-top">
+            <header class="header navbar navbar-expand-sm expand-header">
+                <div class="header-left d-flex">
+                    <div class="logo">
+                        <img src="../Asset/IMG-20240124-WA0003.jpg" alt style="width: 150px;">
+                    </div>
+                    <a href="#" class="sidebarCollapse" data-placement="bottom" id="toggleSidebar">
+                        <span class="fas fa-bars"></span>
+                    </a>
+                </div>
+
+                <ul class="navbar-item flex-row ml-auto">
+                    <li class=dropdown user-profile-dropdown">
+                        <a href="#" class="nav-link user" id="notify" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="assets/icons/notification-bing.svg" alt class="icon">
+                            <p class="count purple-gradient">3</p>
+                        </a>
+
+                        <div class="dropdown-menu">
+                            <div class="dp-main-menu">
+                                <a href="#" class="dropdown-item message-item">
+                                    <img src="assets/img/profiles/avator1.jpg" style=" border-radius: 50%"
+                                        class="user-note">
+                                    <div class="note-info-desmis">
+                                        <div class="user-notify-info">
+                                            <p class="note-name">Server
+                                                Rebooted</p>
+                                            <p class="note-time">20
+                                                mins ago</p>
+                                        </div>
+                                        <p class="status-link"><span class="fas fa-times"></span></p>
+                                    </div>
+                                </a>
+
+                                <a href="#" class="dropdown-item message-item">
+                                    <img src="assets/img/profiles/avatar-02.jpg" style=" border-radius: 50%"
+                                        class="user-note">
+                                    <div class="note-info-desmis">
+                                        <div class="user-notify-info">
+                                            <p class="note-name">Server
+                                                Rebooted</p>
+                                            <p class="note-time">20
+                                                mins ago</p>
+                                        </div>
+                                        <p class="status-link"><span class="fas fa-times"></span></p>
+                                    </div>
+                                </a>
+
+                                <a href="#" class="dropdown-item message-item">
+                                    <img src="assets/img/profiles/avatar-03.jpg" style=" border-radius: 50%"
+                                        class="user-note">
+                                    <div class="note-info-desmis">
+                                        <div class="user-notify-info">
+                                            <p class="note-name">Server
+                                                Rebooted</p>
+                                            <p class="note-time">20
+                                                mins ago</p>
+                                        </div>
+                                        <p class="status-link"><span class="fas fa-times"></span></p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown user-profile-dropdown">
+                        <a href="#" class="nav-link user" id="notify" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-message icon"></i>
+                            <p class="count">3</p>
+                        </a>
+
+                        <div class="dropdown-menu">
+                            <div class="dp-main-menu">
+                                <a href="#" class="dropdown-item message-item">
+                                    <img src="assets/img/profiles/avatar-06.jpg" style=" border-radius: 50%"
+                                        class="sms-user">
+                                    <div class="user-message-info">
+                                        <p class="user-name">Halen
+                                            message</p>
+                                        <p class="user-role">super
+                                            user</p>
+                                    </div>
+                                </a>
+
+                                <a href="#" class="dropdown-item message-item">
+                                    <img src="assets/img/profiles/avatar-06.jpg" style=" border-radius: 50%"
+                                        class="sms-user">
+                                    <div class="user-message-info">
+                                        <p class="user-name">Halen
+                                            message</p>
+                                        <p class="user-role">super
+                                            user</p>
+                                    </div>
+                                </a>
+
+                                <a href="#" class="dropdown-item message-item">
+                                    <img src="assets/img/profiles/avatar-06.jpg" style=" border-radius: 50%"
+                                        class="sms-user">
+                                    <div class="user-message-info">
+                                        <p class="user-name">Halen
+                                            message</p>
+                                        <p class="user-role">super
+                                            user</p>
+                                    </div>
+                                </a>
+
+                            </div>
+                        </div>
+
+                    </li>
+
+                    <li class="nav-item dropdown user-profile-dropdown">
+                        <a href="#" class="nav-link user" id="notify" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="assets/img/profiles/avatar-04.jpg" style="width: 40px; border-radius: 50%">
+                        </a>
+
+                        <div class="dropdown-menu">
+                            <div class="user-profile-section">
+                                <div class="media mx-auto">
+                                    <img src="assets/img/profiles/avatar-04.jpg" alt class="img-fluid mr-2"
+                                        style="border-radius: 50%;">
+                                    <div class="media-body">
+                                        <h5>John John</h5>
+                                        <p>0806452234</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="dp-main-menu pro">
+                                <a href="#" class="dropdown-item"><span class="fa-solid fa-user"></span>
+                                    My Profiles</a>
+                                <a href="#" class="dropdown-item"><span class="flaticon-381-settings-2"></span>
+                                    Setting</a>
+                                <a href="#" class="dropdown-item"><span class="fas fa-outdent"></span>
+                                    Logout</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </header>
+        </div>
+        <!-- Top Navbar End -->
+
+        <!-- sidebar start -->
+        <div class="left-menu">
+            <div class="menubar-content">
+                <nav class="animated bounceInDown">->
+                    <ul id="sidebar">
+                        <li class="active">
+                            <a href="#"><i class="fas fa-home"></i>
+                                dasboard</a>
+                        </li>
+
+                        <li>
+                            <a href="#"><i class="fas fa-lightbulb"></i>
+                                Buy Electricity</a>
+                        </li>
+
+                        <li>
+                            <a href="#"><i class="fa-solid fa-mobile-alt"></i>
+                                Buy Airtime</a>
+                        </li>
+
+                        <li>
+                            <a href="#"><i class="fas fa-signal"></i> Buy
+                                Internet Data</a>
+                        </li>
+
+                        <li>
+                            <a href="#"><i class="fas fa-tv"></i>
+                                Tv Subscription</a>
+                        </li>
+
+                        <li>
+                            <a href="#"><i class="fa solid fa-book-open"></i>
+                                Education Payment</a>
+                        </li>
+
+                        <li>
+                            <a href="#"><i class="fab fa-accessible-icon"></i>
+                                Buy Insurance</a>
+                        </li>
+
+                        <li>
+                            <a href="#"><i class="fas fa-gift"></i>
+                                Referrals</a>
+                        </li>
+
+                        <li>
+                            <a href="#"><i class="fas fa-lightbulb"></i>
+                                Lost Your Token?</a>
+                        </li>
+
+                        <li>
+                            <hr class="border-primary">
+                        </li>
+
+                        <li class="sub-menu">
+                            <a href="#" data-bs-toggle="collapse" aria-expanded="false"><i class="fas fa-wallet"></i>
+                                Wallet <i class="fas fa-angle-right right"></i></a>
+                            <ul class="left-menu-dp">
+                                <li><a href="#"><i class=" fas  fa-history"></i>
+                                        Wallet
+                                        Transaction</a></li>
+                                <li><a href="#"><i class=" fas  fa-money-bill-transfer"></i>
+                                        Fund Wallet</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="sub-menu">
+                            <a href="#" data-bs-toggle="collapse" aria-expanded="false"><i
+                                    class=" flaticon-381-send"></i>
+                                Send Money <i class="fas fa-angle-right right"></i></a>
+                            <ul class="left-menu-dp">
+                                <li><a href="#"><i class=" flaticon-381-send"></i>
+                                        Send to Account</a></li>
+                                <li><a href="#"><i class=" fas  fa-history"></i>
+                                        Send Transaction</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#"><i class="fas fa-long-arrow-alt-right"></i>Transaction
+                                History</a>
+                        </li>
+
+                        <li>
+                            <a href="#"><i class="flaticon-381-settings-1"></i>Profile
+                                Settings</a>
+                        </li>
+
+                        <li>
+                            <a href="#"><i class="fas fa-sign-out-alt"></i>logout</a>
+                        </li>
+
+                    </ul>
+                    <!-- </div> -->
+                </nav>
+            </div>
+        </div>
+        <!-- sidebar end -->
+
+        <!-- content wrapper start -->
+        <div class="content-wrapper">
+            <section class="dashboard-top-sec">
+                <div class="container-fluid">
+                    <div class="welcome-message">
+                        <h2 class="mb-5">Welcome, <span style="color: #174161;">John John</span> 
+                        </h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-8 mb-5">
+                            <div class="bg-white wallet-balance">
+                                <div class="row">
+                                    <div class="col-md-6 text-center">
+                                        <div class="wallet-info">
+                                            <span class="fas fa-wallet mb-3 wallet-icon"></span>
+                                            <div class="gaps-2x"></div>
+                                            <h5 class="wallet-info-sub">Wallet
+                                                Balance</h>
+                                                <h2 class="wallet-info-amount">0.00
+                                                    NGN</h2>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="d-lg-none d-sm-block" style="border-top: 1px solid #e6effb;"></div>
+                                            <div class="wallet-info bdr-tl">
+                                                <div>
+                                                    <h5 class="mb-4 wallet-info-sub mt-3" style="color:#457fd4;">Available Payment Method</h5>
+                                                    <ul class="mb-4">
+                                                        <li style="color:#457fd4;">
+                                                            <span class="mr-2" style="color:#000;">Debit Cards:</span> Available
+                                                        </li>
+                                                        <li style="color:#457fd4;">
+                                                            <span class="mr-2" style="color:#000;">Bank Transfer:</span> Available
+                                                        </li>
+                                                    </ul>
+
+                                                    <a href class="di-btn purple-gradient mb-5"><i class="fas fa-wallet"></i>
+                                                        Fund With Card
+                                                        Transfer</a>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 mb-5">
+                            <div class="purple-gradient wallet-balance">
+                                <div class="ref-balance">
+                                    <div class="ref mb-2">
+                                        <div class="ref-balance-icon mb-3">
+                                            <span class="fas fa-chain"></span>
+                                        </div>
+                                        <div class="ref-balance-text">
+                                            <p>Referral
+                                                Balance</p>
+                                            <h2>0.00 NGN</h2>
+                                        </div>
+                                    </div>
+
+                                    <div class="Pay-method mb-3">
+                                        <button class="btn mb-2 disabled" onclick="cashout()">
+                                            Cashout
+                                        </button>
+                                    </div>
+
+                                    <div class="total-referral d-flex gap-2">
+                                        <div class="ref-total-icon">
+                                            <span class="fas fa-users"></span>
+                                        </div>
+                                        <div class="ref-balance-text">
+                                            <p>Total Referrals</p>
+                                            <h2>0</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-lg-8 mb-3 mb-lg-5">
+                            <div class="position-relative card table-nowrap table-card card-transaction">
+                                <div class="card-header align-items-center dark">
+                                    <h5 class="mb-2">Latest Transactions</h5>
+                                    <p class="mb-0 small text-muted">1 Pending</p>
+                                </div>
+                                <div class="trans-pad">
+                                    <div class="row mt-2 pt-2">
+                                        <div class="col-md-6" id="income">
+                                            <div class="d-flex justify-content-start align-items-center">
+                                                <p class="fa fa-long-arrow-down"></p>
+                                                <p class="text mx-3">Income</p>
+                                                <p class="ml-4 money">$9,758.23</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6"> 
+                                            <div class="d-flex justify-content-md-end align-items-center">
+                                                <div class="fa fa-long-arrow-up"></div>
+                                                <div class="text mx-3">Expense</div>
+                                                <div class="ml-4 money">$961.23</div>
+                                            </div> 
+                                        </div> 
+                                    </div>
+
+                                    <div class="table-responsive mt-3">
+                                        <table class="table mb-0 table-borderless">
+                                            <thead class="small text-uppercase bg-body text-muted">
+                                                <tr>
+                                                    <th scope="col">Activity</th>
+                                                    <th scope="col">Mode</th>
+                                                    <th scope="col">Date</th>
+                                                    <th scope="col"class="text-right">Amount</th>
+                                                    <th scope="col">Status</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="align-middle">
+                                                    <td scope="row"> 
+                                                        <span class="fa fa-briefcase mr-1 td-icons"></span> Coorg Trip 
+                                                    </td>
+                                                    <td>
+                                                        <span class="fas fa-cc-mastercard"></span>
+                                                    </td>
+                                                    <td class="text-muted">13 Sep, 2021, 12:30 AM
+                                                    </td>
+                                                
+                                                    <td class="d-flex align-items-center">
+                                                        <span><i class="fa fa-long-arrow-up mr-1" aria-hidden="true"></i></span>
+                                                            <span>$145</span>
+                                                    </td>
+                                                    <td>
+                                                        <span class=" fw-normal bg-tint-success text-success">Completed</span>
+                                                    </td>
+                                                </tr>                              
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                    <div class="card-footer text-end">
+                                        <a href="#!" class="btn btn-gray">View All Transactions</a>
+                                    </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    <!-- content wrapper End -->
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Your custom script -->
+    <!-- <script src="assets/js/bootstrap.bundle.min.js"></script> -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

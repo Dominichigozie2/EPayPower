@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+
+  <!-- Bootstrap css -->
+  <link rel="stylesheet" href="./css/bootstrap-5.1.3-dist/bootstrap-5.1.3-dist/css/bootstrap.min.css">
+
+  <!--================= fontawesome css ==================-->
+  <link rel="stylesheet" href="./icons/font-awesome/css/all.min.css">
+
+  <!-- ========= google font ============ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Custom css -->
+  <link rel="stylesheet" href="./css/login.css">
+
+</head>
+
+<body>
+
+  <!-- top bar start -->
+  <header id="topbar" class="text-center text-lg-start bg-light text-muted topbar">
+    <section class="d-flex justify-content-center justify-content-lg-between p-2 container">
+      <div class="me-5 d-lg-block">
+        <a href="" class="me-2 text-body">Lost Your Token?</a>
+        <span class="me-2">|</span>
+        <a href="" class="me-2 text-body"><i class="fa solid fa-phone me-1"></i> 02096244444</a>
+        <span class="me-2">|</span>
+        <a href="" class="me-2 text-body"><i class="fab fa-whatsapp me-1"></i> 09030009930</a>
+        <span class="me-2">|</span>
+        <a href="" class="me-4 text-body search">
+          <i class="fa solid fa-search"></i>
+        </a>
+      </div>
+
+      <div class="d-none d-lg-block">
+        <a href="" class="me-4 text-body">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="me-4 text-body">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="me-4 text-body">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="me-4 text-body">
+          <i class="fab fa-youtube"></i>
+        </a>
+      </div>
+    </section>
+  </header>
+  <!-- topbar end -->
+
+  <!-- Nav section start -->
+  <nav id="navbar" class="navbar navbar-expand-lg bg-body-tertiary navbar-light navbar-fixed">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="./Asset/IMG-20240124-WA0003.jpg" alt="" style="width: 140px;"></a>
+
+      <!-- <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <i class="fa solid fa-search"></i> -->
+      <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+      <!-- </form> -->
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+          <li class="nav-item mx-2">
+            <a class="nav-link active" aria-current="page" href="#">Personal</a>
+          </li>
+          <li class="nav-item mx-2 dropdown">
+            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Business <i class="fas fa-angle-down mx-1"></i>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <li><a class="dropdown-item mb-1" href="#"><i class="fas fa-user me-3"></i> Become A Merchant</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fas fa-store me-3"></i> Sell Online</a></li>
+            </ul>
+          </li>
+          <li class="nav-item mx-2 dropdown">
+            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Support <i class="fas fa-angle-down mx-1"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item mb-1" href="#"><i class="fas fa-question-circle me-3"></i> FAQ</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fas fa-envelope me-3"></i> Contact Us</a></li>
+            </ul>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link me-2" href="#">About Us</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+          <li class="nav-item mx-2 d-flex">
+            <a href="./login.html" class="btn btn-primary me-2 btn"><i class="fa solid fa-sign-in-alt me-1"></i>
+              Login</a>
+            <a href="./register.html" class="btn btn-secondary me-2"><i class="fa solid fa-user me-1"></i> Sign up</a>
+            <!-- <div class="btn-group ">
+              <button type="button" class="btn btn-secondary" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fa solid fa-user me-1"></i> Sign up
+              </button>
+              <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">As a User</a>
+                  <a class="dropdown-item" href="#">As a Merchant</a>
+              </div> -->
+          <!-- </div> -->
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Nav section end -->
+
+  <!-- login start -->
+  <section class="login_section">
+      <div class="wrapper d-flex justify-content-center">
+        <div class="login_box position-relative">
+          <div class="login_header position-absolute d-flex justify-content-center">
+            <span>Login</span>
+          </div>
+
+          <p class="text-center mb-5">Welcome Login your EPayPower Account</p>
+
+          <div class="input_box position-relative d-flex">
+            <input type="text" id="user" class="input-field" required>
+            <label for="user" class="label position-absolute">Email or Phone Number</label>
+            <i class="fa solid fa-user icon position-absolute"></i>
+          </div>
+          <div class="input_box position-relative d-flex">
+            <input type="password" id="pass" class="input-field" required>
+            <label for="pass" class="label position-absolute">Password</label>
+            <i class="fa solid fa-lock icon position-absolute"></i>
+          </div>
+          <div class="remember-forget d-flex justify-content-between">
+            <div class="rememer-me">
+              <input type="checkbox" id="remember">
+              <label for="remember">Remember me</label>
+            </div>
+            <div class="forget">
+              <a href="#">Forget password?</a>
+            </div>
+          </div>
+          <div class="input_box position-relative d-flex">
+            <input type="submit" class="input-submit" value="Login">
+          </div>
+          <div class="register text-center">
+            <span>Don't have an account <a href="./register.html" class="fw-bold reg">Register</a></span>
+          </div>
+        </div>
+    </div>
+  </section>
+  <!-- login end -->
+
+  <!-- Stickly sidebar start -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2 d-none d-md-block sidebar">
+        <div class="sidebar-sticky">
+          <ul class="nav flex-column">
+            <li class="nav-item border-bottom">
+              <a class="nav-link" href="#">Buy phone airtime</a>
+            </li>
+            <li class="nav-item border-bottom">
+              <a class="nav-link" href="#" target="_blank">Buy internet data</a>
+            </li>
+            <li class="nav-item border-bottom">
+              <a class="nav-link" href="#">Pay TV subcription</a>
+            </li>
+            <li class="nav-item border-bottom">
+              <a class="nav-link" href="#">Pay electricity bill</a>
+            </li>
+            <li class="nav-item side_dropdown">
+              <a class="nav-link" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                More
+                <i class="fas fa-angle-right"></i>
+              </a>
+              
+              <div class="dropdown-sidemenu">
+                <a class="dropdown-sideitem border-bottom" href="#"><i class="fas fa-graduation-cap me-2"></i> Educational Payment</a>
+                <a class="dropdown-sideitem border-bottom" href="#"> <i class="fas fa-ticket-alt me-2"></i> Buy Ticket</a>
+                <a class="dropdown-sideitem border-bottom" href="#"><i class="fas fa-shield-alt me-2"></i>  Buy Insurance</a>
+                <a class="dropdown-sideitem border-bottom" href="#"><i class="fas fa-money-bill-wave me-2"></i> Make Payment</a>
+                <a class="dropdown-sideitem border-bottom" href="#"> <i class="fas fa-money-bill me-2"></i> Start Earning</a>
+                <a class="dropdown-sideitem" href="#"> <i class="fas fa-handshake me-2"></i> Partner with Us</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Stickly sidebar end -->
+
+  <script src="./js/script.js"></script>
+  <!-- bootstrap js -->
+  <script src="./js/bootstrap-5.1.3-dist/bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
