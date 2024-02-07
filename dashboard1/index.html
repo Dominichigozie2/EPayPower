@@ -8,6 +8,13 @@
 
     <!-- Bootstrap css -->
     <link rel="stylesheet" href="../css/bootstrap-5.1.3-dist/bootstrap-5.1.3-dist/css/bootstrap.min.css">
+    <!-- Bootstrap Selectpicker CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/5.1.3/css/bootstrap-select.min.css">
+
+    <!-- animate css -->
+    <link rel="stylesheet" href="./assets/css/animate.css">
+
+
 
     <!--================= fontawesome css ==================-->
     <link rel="stylesheet" href="./assets/icons/fontawesome/css/all.min.css">
@@ -39,12 +46,12 @@
                         <img src="../Asset/IMG-20240124-WA0003.jpg" alt style="width: 150px;">
                     </div>
                     <a href="#" class="sidebarCollapse" data-placement="bottom" id="toggleSidebar">
-                        <span class="fas fa-bars"></span>
+                        <span class="fa-solid fa-bars-staggered"></span>
                     </a>
                 </div>
 
                 <ul class="navbar-item flex-row ml-auto">
-                    <li class=dropdown user-profile-dropdown">
+                    <li class="nav-item user-profile-dropdown mobile-drop">
                         <a href="#" class="nav-link user" id="notify" data-bs-toggle="dropdown" aria-expanded="false">
                             <img src="assets/icons/notification-bing.svg" alt class="icon">
                             <p class="count purple-gradient">3</p>
@@ -97,7 +104,7 @@
                         </div>
                     </li>
 
-                    <li class="nav-item dropdown user-profile-dropdown">
+                    <li class="nav-item dropdown user-profile-dropdown mobile-drop1">
                         <a href="#" class="nav-link user" id="notify" data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="fa-solid fa-message icon"></i>
                             <p class="count">3</p>
@@ -178,50 +185,50 @@
         <!-- sidebar start -->
         <div class="left-menu">
             <div class="menubar-content">
-                <nav class="animated bounceInDown">->
+                <nav class="animated bounceInDown">
                     <ul id="sidebar">
                         <li class="active">
-                            <a href="#"><i class="fas fa-home"></i>
+                            <a href="./index.html"><i class="fas fa-home side-icon"></i>
                                 dasboard</a>
                         </li>
 
                         <li>
-                            <a href="#"><i class="fas fa-lightbulb"></i>
+                            <a href="./electricity.html"><i class="fas fa-lightbulb side-icon"></i>
                                 Buy Electricity</a>
                         </li>
 
                         <li>
-                            <a href="#"><i class="fa-solid fa-mobile-alt"></i>
+                            <a href="./Airtime.html"><i class="fa-solid fa-mobile-alt side-icon"></i>
                                 Buy Airtime</a>
                         </li>
 
                         <li>
-                            <a href="#"><i class="fas fa-signal"></i> Buy
+                            <a href="./data.html"><i class="fas fa-signal side-icon"></i> Buy
                                 Internet Data</a>
                         </li>
 
                         <li>
-                            <a href="#"><i class="fas fa-tv"></i>
+                            <a href="./tv.html"><i class="fas fa-tv side-icon"></i>
                                 Tv Subscription</a>
                         </li>
 
                         <li>
-                            <a href="#"><i class="fa solid fa-book-open"></i>
+                            <a href="#"><i class="fa solid fa-book-open side-icon"></i>
                                 Education Payment</a>
                         </li>
 
                         <li>
-                            <a href="#"><i class="fab fa-accessible-icon"></i>
+                            <a href="#"><i class="fab fa-accessible-icon side-icon"></i>
                                 Buy Insurance</a>
                         </li>
 
                         <li>
-                            <a href="#"><i class="fas fa-gift"></i>
+                            <a href="#"><i class="fas fa-gift side-icon"></i>
                                 Referrals</a>
                         </li>
 
                         <li>
-                            <a href="#"><i class="fas fa-lightbulb"></i>
+                            <a href="#"><i class="fas fa-lightbulb side-icon"></i>
                                 Lost Your Token?</a>
                         </li>
 
@@ -230,41 +237,49 @@
                         </li>
 
                         <li class="sub-menu">
-                            <a href="#" data-bs-toggle="collapse" aria-expanded="false"><i class="fas fa-wallet"></i>
+                            <a href="#" data-bs-toggle="collapse" aria-expanded="false"><i class="fas fa-wallet side-icon"></i>
                                 Wallet <i class="fas fa-angle-right right"></i></a>
                             <ul class="left-menu-dp">
-                                <li><a href="#"><i class=" fas  fa-history"></i>
+                                <li><a href="#"><i class=" fas  fa-history side-icon"></i>
                                         Wallet
                                         Transaction</a></li>
-                                <li><a href="#"><i class=" fas  fa-money-bill-transfer"></i>
+                                <li><a href="#"><i class=" fas  fa-money-bill-transfer side-icon"></i>
                                         Fund Wallet</a></li>
                             </ul>
                         </li>
 
                         <li class="sub-menu">
                             <a href="#" data-bs-toggle="collapse" aria-expanded="false"><i
-                                    class=" flaticon-381-send"></i>
+                                    class=" flaticon-381-send side-icon"></i>
                                 Send Money <i class="fas fa-angle-right right"></i></a>
                             <ul class="left-menu-dp">
-                                <li><a href="#"><i class=" flaticon-381-send"></i>
+                                <li><a href="#"><i class=" flaticon-381-send side-icon"></i>
                                         Send to Account</a></li>
-                                <li><a href="#"><i class=" fas  fa-history"></i>
+                                <li><a href="#"><i class=" fas  fa-history side-icon"></i>
                                         Send Transaction</a></li>
                             </ul>
                         </li>
 
                         <li>
-                            <a href="#"><i class="fas fa-long-arrow-alt-right"></i>Transaction
+                            <a href="./transaction.html"><i class="fas fa-long-arrow-alt-right side-icon"></i>Transaction
                                 History</a>
                         </li>
 
                         <li>
-                            <a href="#"><i class="flaticon-381-settings-1"></i>Profile
+                            <a href="#"><i class="flaticon-381-settings-1 side-icon"></i>Profile
                                 Settings</a>
                         </li>
 
-                        <li>
-                            <a href="#"><i class="fas fa-sign-out-alt"></i>logout</a>
+                        <li class="mb-3">
+                            <hr class="border-primary">
+                        </li>
+
+                        <div class="side-logout mt-5 mb-5">
+                            <a href="#"><i class="fa-solid fa-right-from-bracket"></i>logout</a>
+                        </div>
+
+                        <li class="mb-5 hr-clear">
+                            <hr style="border: 1px solid #fff;">
                         </li>
 
                     </ul>
@@ -298,7 +313,7 @@
                                     </div>
 
                                     <div class="col-md-6">
-                                        <div class="d-lg-none d-sm-block" style="border-top: 1px solid #e6effb;"></div>
+                                        <div class="d-md-none d-lg-none d-sm-block" style="border-top: 1px solid #e6effb;"></div>
                                             <div class="wallet-info bdr-tl">
                                                 <div>
                                                     <h5 class="mb-4 wallet-info-sub mt-3" style="color:#457fd4;">Available Payment Method</h5>
@@ -356,8 +371,45 @@
                     </div>
 
 
-                    <div class="row">
-                        <div class="col-lg-8 mb-3 mb-lg-5">
+                    <div class="row mb-5 second-row">
+                        <div class="col-lg-4 mb-5 mb-lg-5">
+                            <div class="p-3 text-center card-referral">
+                                <div class="position-relative mb-3">
+                                    <img src="assets/img/profiles/avatar-04.jpg" style="border-radius: 50%; width: 90px;">
+                                    <!-- <span class="dots"><i class="fa fa-plus"></i></span> -->
+                                </div>
+
+                                <div class="mb-3">
+                                    <h5>Invite & Earn</h5>
+                                    <span class="earn-text">Earn upto 2,000 for inviting the 5 friends <br> selected below</span>
+                                </div>
+
+                                <div class="px-3 mt-2 d-flex gap-2">
+                                    <input class="form-control" placeholder="Search by email">
+                                    <button class="btn">Invite</button>
+                                </div>
+
+                                <div class="mt-3">
+                                    <h5>Share your referral link</h5>
+                                </div>
+
+                                <div class="mt-3 gap-2 px-3">
+                                    <div class="mb-2 d-flex gap-2">
+                                        <input type="text" class="form-control" value="https://example.com/referral?code=YOUR_REFERRAL_CODE" id="referralLink" readonly>
+                                        <button class="btn" onclick="copyReferralLink()">Copy</button>
+                                    </div>
+                        
+                                    <div class="d-flex justify-content-center gap-3 social-link-btn">
+                                        <a href="#" onclick="shareOnSocialMedia('facebook')"><i class="fab fa-facebook fa-2x"></i></a>
+                                        <a href="#" onclick="shareOnSocialMedia('twitter')"><i class="fab fa-twitter fa-2x"></i></a>
+                                        <a href="#" onclick="shareOnSocialMedia('whatsapp')"><i class="fab fa-whatsapp fa-2x"></i></a>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                        </div>
+
+                        <div class="col-lg-8 mb-5 mb-lg-5">
                             <div class="position-relative card table-nowrap table-card card-transaction">
                                 <div class="card-header align-items-center dark">
                                     <h5 class="mb-2">Latest Transactions</h5>
@@ -366,7 +418,7 @@
                                 <div class="trans-pad">
                                     <div class="row mt-2 pt-2">
                                         <div class="col-md-6" id="income">
-                                            <div class="d-flex justify-content-start align-items-center">
+                                            <div class="d-flex justify-content-start align-items-center mb-2">
                                                 <p class="fa fa-long-arrow-down"></p>
                                                 <p class="text mx-3">Income</p>
                                                 <p class="ml-4 money">$9,758.23</p>
@@ -412,12 +464,30 @@
                                                         <span class=" fw-normal bg-tint-success text-success">Completed</span>
                                                     </td>
                                                 </tr>                              
+                                                <tr class="align-middle">
+                                                    <td scope="row"> 
+                                                        <span class="fa fa-briefcase mr-1 td-icons"></span> Coorg Trip 
+                                                    </td>
+                                                    <td>
+                                                        <span class="fas fa-cc-mastercard"></span>
+                                                    </td>
+                                                    <td class="text-muted">13 Sep, 2021, 12:30 AM
+                                                    </td>
+                                                
+                                                    <td class="d-flex align-items-center">
+                                                        <span><i class="fa fa-long-arrow-down mr-1" aria-hidden="true"></i></span>
+                                                            <span>$145</span>
+                                                    </td>
+                                                    <td>
+                                                        <span class=" fw-normal bg-tint-success text-success">Pending</span>
+                                                    </td>
+                                                </tr>                              
                                             </tbody>
                                         </table>
                                     </div>
                                 </div>
                                     <div class="card-footer text-end">
-                                        <a href="#!" class="btn btn-gray">View All Transactions</a>
+                                        <a href="#!" class="di-btn purple-gradient">View All Transactions</a>
                                     </div>
                                
                             </div>
@@ -426,14 +496,56 @@
                 </div>
             </section>
         </div>
-    <!-- content wrapper End -->
+        <!-- content wrapper End -->
 
+        <!-- Footer -->
+        <footer class="footer-content fixed-bottom">
+            <!-- Section: Social media -->
+            <section class="d-flex justify-content-center justify-content-lg-between p-2 border-top footer-section">
+            <!-- Left -->
+            <div class="me-5 d-flex d-lg-block footer-copy">
+                © 2023 Epaypower
+                <a class="text-reset fw-bold" href="#">EpayPower.com</a>
+            </div>
+            <!-- Left -->
+        
+            <!-- Right -->
+            <div class="d-lg-block d-sm-none d-md-none list-footer">
+                <a href="#" class="me-4 text-reset">About Us</a>
+                <a href="#" class="me-4 text-reset">Contact Us</a>
+                <a href="#" class="me-4 text-reset">Blog</a>
+                <a href="#" class="me-4 text-reset">FAQ</a>
+                <a href="/terms-and-conditions" class="me-4 text-reset">Terms and Conditions</a>
+                <a href="/terms-and-conditions" class="me-4 text-reset">Privacy Policy</a>
+            </div>
+            <!-- Right -->
+
+            <!-- Center: Language Selection -->
+            <div class="me-5">
+                <select class="selectpicker me-4" data-width="fit">
+                    <option data-content='<img src="assets/img/flags/us.png" alt=""/> English'>English</option>
+                    <option data-content='<span class="flag-icon flag-icon-mx"></span> Español'>Español</option>
+                </select>
+
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            <!-- Center: Language Selection -->
+            </section>
+        </footer>
+        <!-- Footer -->
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Your custom script -->
-    <!-- <script src="assets/js/bootstrap.bundle.min.js"></script> -->
+    <!-- custom css -->
     <script src="assets/js/script.js"></script>
 </body>
 

@@ -86,6 +86,16 @@ ul{
     list-style: none;
 }
 
+.m-y-12 {
+    margin-bottom: 12px!important;
+    margin-top: 12px!important;
+}
+
+.py-1 {
+    padding-top: 0.25rem!important;
+    padding-bottom: 0.25rem!important;
+}
+
 ovh{
     overflow: hidden;
 }
@@ -111,11 +121,9 @@ table.table{
 }
 
 .bg-ctc{
-    background: linear-gradient(121deg, rgba(92, 26, 195) 25% rgb(136 25 206 / 95%) 100%);
+    background: linear-gradient(147.87deg, rgb(240, 170, 34) -8.91%, rgb(240, 88, 34) 99.52%);
 }
-.bg-ctc{
-    background: linear-gradient(121deg, rgba(26, 179, 195) 25% rgb(25 97 206 / 95%) 100%);
-}
-.bg-ctc{
-    background: linear-gradient(121deg, rgba(232, 202, 53) 25% rgb(206 125 25 / 95%) 100%);
-}
+
+/* =================loading================ */
+
+
