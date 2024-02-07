@@ -409,7 +409,7 @@
                             </div>
                         
                             <div class="col-md-10 mt-4">
-                                <form>
+                                <form  id="step1Form">
                                     <div class="row g-4 justify-content-center">
                                         <div class="col-md-6 mt-4">
                                                 <label for="network" class="form-label">Network Provider</label>
@@ -428,7 +428,7 @@
                                         <div class="col-md-6 mt-4">
                                                 <label for="deviceId" class="form-label">Device ID / Phone Number</label>
                                                 <input type="text" class="form-control airtime-input" placeholder="Enter Phone Number" id="deviceId" aria-describedby="deviceIdHelp" required>
-                                                <p class="text-danger"></p>
+                                                <p class="text-danger device-no"></p>
                                         </div>
                         
                                         <div class="col-md-6 mt-4">
@@ -446,9 +446,9 @@
                                         <div class="col-12 text-end">
                                             <div class="button-container">
                                                 <button type="button" class="btn btn-cancel" onclick="goToStep(1)">Cancel</button>
-                                                <button type="button" class="btn btn-continue" id="continueButton" onclick="goToStep(2)">
-                                                    <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true" id="loadingSpinner"></span>
-                                                    Continue
+                                                <button type="button" class="btn btn-continue disabled" id="continueButton" onclick=" loadAndGoToStep(2)">
+                                                    <span id="continueButtonText">Continue</span>
+                                                    <span id="continueButtonLoader" class="d-none spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
                                                 </button>
                                             </div>
                                         </div>
@@ -527,15 +527,7 @@
                                                         </button>
                                                     
                                                         <button class="btn btn-outline-primary mr-1 mb-1 pay-with-card" type="button" value="Pay Now" data-bs-toggle="modal" data-bs-target="#paymentModal">
-                                                            <i class="fas fa-credit-card"></i> Pay with Card
-                                                        </button>
-                                                    
-                                                        <button class="btn btn-outline-primary mr-1 mb-1" data-backdrop="static" data-bs-toggle="modal" data-bs-target="#menu1">
-                                                            <i class="fas fa-university"></i> Pay with Transfer
-                                                        </button>
-                                                    
-                                                        <button class="btn btn-outline-primary mr-1 mb-1" data-backdrop="static" data-toggle="modal" data-target="#pay-with-ussd-modal">
-                                                            <i class="fas fa-mobile-alt"></i> Pay with USSD
+                                                            <i class="fas fa-credit-card"></i> Pay with other method
                                                         </button>
                                                 </div>
                         
@@ -682,13 +674,13 @@
                                                                                                                                 <div class="clipborad-container">
                                                                                                                                     <span>
                                                                                                                                         <span class="monnify-icon sl-1 undefined" style="vertical-align: middle; display: inline-block; line-height: 0;">
-                                                                                                                                            <i class="fa-solid fa-copy" style="font-size: 16px;"></i>
+                                                                                                                                            <i class="fa-solid fa-copy copy-icon" style="font-size: 16px;"></i>
                                                                                                                                         </span>
                                                                                                                                     </span>
                                                                                                                             
                                                                                                                                     <div class="copy-action-wrapper" style="display: none;">
                                                                                                                                         <div class="d-flex justify-content-center">
-                                                                                                                                            <div class="alert alert-success" role="alert">
+                                                                                                                                            <div >
                                                                                                                                                 Copied!
                                                                                                                                             </div>
                                                                                                                                         </div>
@@ -711,7 +703,7 @@
                                                                                                                 <div class="row">
                                                                                                                     <div class="d-flex progress-amount-desc-container">
                                                                                                                         <h5 class="counter-text">This one-time account expires in</h5>
-                                                                                                                        <h5 class="amount-bold counter-text">40 mins</h5>
+                                                                                                                        <h5 class="amount-bold counter-text counter-time">40 mins 0 secs</h5>
                                                                                                                     </div>
                                                                                                                 </div>
                                                                                                             </div>
@@ -779,22 +771,22 @@
                                                                                                                 <div class="d-flex">
                                                                                                                     <div class="pan-wrapper no-right-border" style="width: 25%;">
                                                                                                                         <div class="pan-input-wrapper">
-                                                                                                                            <input name="pin1" type="password" class="cr_pin pins" value="">
+                                                                                                                            <input name="pin1" type="password" class="cr_pin pins" maxlength="1" minlength="1" value="">
                                                                                                                         </div>
                                                                                                                     </div>
                                                                                                                     <div class="pan-wrapper no-left-border no-right-border" style="width: 25%;">
                                                                                                                         <div class="pan-input-wrapper">
-                                                                                                                            <input name="pin2" type="password" class="cr_pin pins" value="">
+                                                                                                                            <input name="pin2" type="password" class="cr_pin pins" maxlength="1" minlength="1" value="">
                                                                                                                         </div>
                                                                                                                     </div>
                                                                                                                     <div class="pan-wrapper no-left-border no-right-border" style="width: 25%;">
                                                                                                                         <div class="pan-input-wrapper">
-                                                                                                                            <input name="pin3" type="password" class="cr_pin pins" value="">
+                                                                                                                            <input name="pin3" type="password" class="cr_pin pins" maxlength="1" minlength="1" value="">
                                                                                                                         </div>
                                                                                                                     </div>
                                                                                                                     <div class="pan-wrapper no-left-border" style="width: 25%;">
                                                                                                                         <div class="pan-input-wrapper">
-                                                                                                                            <input name="pin4" type="password" class="cr_pin pins" value="">
+                                                                                                                            <input name="pin4" type="password" class="cr_pin pins" maxlength="1" minlength="1" value="">
                                                                                                                         </div>
                                                                                                                     </div>
                                                                                                                 </div>

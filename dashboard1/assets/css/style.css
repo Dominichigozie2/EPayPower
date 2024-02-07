@@ -363,7 +363,6 @@
 }
 
 
-
 /* <!-- make payment start --> */
 
 .content-area {
@@ -447,8 +446,12 @@
 }
 
 .modal-closebtn i{
-    font-size: 16px;
-    color: --
+    font-size: 20px;
+    color: var(--text-bg);
+}
+
+.modal-body{
+    padding-top: 0!important;
 }
 
 .card0 {
