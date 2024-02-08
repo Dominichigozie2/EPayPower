@@ -380,7 +380,7 @@
             <!-- content wrapper start -->
             <div class="content-wrapper">
                 
-                <div class="row justify-content-center mb-5 ">
+                <div class="row justify-content-center mb-5 processingLine">
                     <div class="col-md-10" id="processLineContainer">
                         <div class="row justify-content-center">
                             <div class="col-md-4 process-line" id="step1">
@@ -402,7 +402,7 @@
                 <!-- STEP 1 airtime Information Start-->
                 <section class="dashboard-top-sec hidden" id="step1Container">
                     <div class="container-fluid">
-                        <div class="row justify-content-center mb-5 ">
+                        <div class="row justify-content-center mb-5 airtime ">
                             <div class="col-md-10 mt-4 text-center">
                                     <h2 class="h5 fw-bold Airtime-heading">Buy Airtime</h2>
                                     <h1 class="Airtime-subheading">Top-up your airtime on iRecharge for MTN, Glo, Airtel, 9mobile</h1>
@@ -465,7 +465,7 @@
                 <!-- STEP 2 Payment method start -->
                 <section class="dashboard-top-sec hidden" id="step2Container">
                     <div class="container-fluid">
-                        <div class="row justify-content-center mt-5 mb-5">
+                        <div class="row justify-content-center mt-5 mb-5 pay">
                             <div class="col-lg-12 mt-3">
                                 <form>
                                     <input name="_token" type="hidden" value="5MVuWmQRtHexmfGn7oUxK8lFO00GeNwnjIuh6ueW">
@@ -714,7 +714,9 @@
                                                                                                             <h2 class="h-title f-w-500 mb-0 text-primary-blue f-s-12 fnt-medium cursor-pointer text-center">Get your bank's USSD code</h2>
                                                                                                             <hr class="m-y-12 border-grey">
                                                                                                         </div>
-                                                                                                        <button class="transfer-btn sc-iGgWBj" style="padding: 10px 8px;">I’ve transferred the money </button>
+                                                                                                        <button class="transfer-btn sc-iGgWBj" style="padding: 10px 8px;" id="transferBtn" onclick="handlePaymentConfirmation(3)">I’ve transferred the money
+                                                                                                            <div id="loadingSpinner" class="spinner" style="display: none;"></div>
+                                                                                                        </button>
                                                                                                     </div>
                                                                                                 </div>
                                                                                             </div>
@@ -826,7 +828,7 @@
                                                                                                             <option value="*322#">Heritage bank</option>
                                                                                                             <option value="*389#">JAIZ BANK</option>
                                                                                                             <option value="*7111#">Keystone bank</option>
-                                                                                                            <option value="">LOTUS Bank</option>
+                                                                                                            <option>LOTUS Bank</option>
                                                                                                             <option value="">Moneymaster PSB</option>
                                                                                                             <option value="*833#">Polaris Bank</option>
                                                                                                             <option value="*000#">Rehoboth Microfinance bank</option>
@@ -867,7 +869,7 @@
                                                                                             <div class="row">
                                                                                                 <div class="col-md-12">
                                                                                                     <div class="clipborad-container">
-                                                                                                        <h4 class="h-sub-title text-center cursor-pointer text-grey">Click to copy code</h4>
+                                                                                                        <h4 class="h-sub-title text-center cursor-pointer text-grey" id="copyCode">Click to copy code</h4>
                                                                                                         <div class="copy-action-wrapper" style="display: none;">
                                                                                                             <div class="react-reveal d-flex justify-content-center">
                                                                                                                 <div class="copy-notify-banner">
@@ -886,7 +888,9 @@
                                                                                                 </div>
                                                                                             </div>
                                                                                             <hr class="ussd-hr">
-                                                                                            <button class="sc-iGgWBj transfer-btn" style="padding: 10px 8px;">I’ve completed this payment</button>
+                                                                                            <button class="transfer-btn sc-iGgWBj" style="padding: 10px 8px;" id="transferBtn" onclick="handlePaymentConfirmation(3)">I’ve transferred the money
+                                                                                                <div id="loadingSpinner" class="spinner" style="display: none;"></div>
+                                                                                            </button>
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>

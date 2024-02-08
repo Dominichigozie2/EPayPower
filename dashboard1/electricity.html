@@ -464,9 +464,9 @@
                                         <div class="col-12 text-end">
                                             <div class="button-container">
                                                 <button type="button" class="btn btn-cancel" onclick="goToStep(1)">Cancel</button>
-                                                <button type="button" class="btn btn-continue" id="continueButton" onclick="goToStep(2)">
-                                                    <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true" id="loadingSpinner"></span>
-                                                    Continue
+                                                <button type="button" class="btn btn-continue disabled" id="continueButton" onclick=" loadAndGoToStep(2)">
+                                                    <span id="continueButtonText">Continue</span>
+                                                    <span id="continueButtonLoader" class="d-none spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
                                                 </button>
                                             </div>
                                         </div>

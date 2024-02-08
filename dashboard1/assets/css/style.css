@@ -651,7 +651,7 @@
 }
 
 #page-content-wrapper {
-    min-width: 100vw;
+    width: 100vw;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -911,32 +911,135 @@
 
 
 
+
+
+
+
+
 @media screen and (max-width: 990px) {
     .card-referral {
         & .dots {
             right: 400px;
         }
     }
+
+    .processingLine, #processLineContainer .row{
+        flex-wrap: nowrap!important;
+    }
+
+    #processLineContainer{
+        width: 100%;
+        justify-content: normal;
+    }
+
+    .Airtime-line {
+        border-top: 3px solid var(--text-color) !important;
+    }
+
+    .active-step {
+        border-top: 3px solid var(--bg-bg) !important;
+    }
+
+
+    .modal-content {
+        left: -120px!important;
+    }
 }
 
 @media screen and (max-width: 767px) {
-    #income {
-        border-right: none !important;
+
+    #processLineContainer{
+        width: 30%;
     }
 }
 
-@media (min-width: 768px) {
-    #sidebar-wrapper {
-        margin-left: 0
+@media screen and (max-width: 768px) {
+   .welcome-index {
+        padding-right: 0!important;
+        padding-left: 0!important;
+    }
+
+    #income {
+        border-right: none !important;
+    }
+
+    .Airtime-process-line{
+        font-size: 12px;
+    }
+
+    #step1Container .airtime,
+    #step2Container .pay{
+        margin-bottom: 12rem!important;
+    }
+
+    .modal-content {
+        left: auto!important;
+        width: auto!important;
+    }
+
+    #wrapper {
+        display: block!important;
     }
 
     #page-content-wrapper {
-        min-width: 0;
-        width: 100%
+        width: 100%;
     }
 
-    #wrapper.toggled #sidebar-wrapper {
-        margin-left: -15rem;
-        display: none
+    #menu-toggle{
+        display: none!important;
+    }
+}
+
+@media screen and (max-width: 570px) {
+
+    #processLineContainer{
+        width: 34%;
+        justify-content: baseline;
+    }
+
+    .Airtime-heading {
+        padding-top: 0;
+    }
+
+    .content-area .card-body {
+        padding: 15px !important;
+    }
+
+    .content-area .card-title {
+        font-size: 1.2em;
+    }
+    
+    .content-area .table-responsive {
+        padding: 8px;
+        font-size: 13px;
+    }
+
+    .payment-button .btn {
+        padding: 10px;
+        font-size: 12px;
+    }
+    
+    
+}
+
+@media screen and (max-width: 520px) {
+
+    .Airtime-process-line{
+        font-size: 10px;
+    }
+
+    .airtime-option{
+        height: auto;
+        overflow: hidden;
+        min-height: 1.1876em;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+}
+
+@media screen and (max-width: 360px){
+    #processLineContainer{
+        width: 35%;
+        justify-content: baseline;
     }
 }

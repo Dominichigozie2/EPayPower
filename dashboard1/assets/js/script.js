@@ -19,11 +19,27 @@ $(".sub-menu a").click(function () {
 
 // -=========== sidebar toggle ============
 $(document).ready(function () {
+    // Initially
+    if ($(window).width() <= 990) {
+        $(".left-menu").addClass("hide");
+        $(".content-wrapper").removeClass("hide");
+    }
+
     $("#toggleSidebar").click(function () {
         $(".left-menu").toggleClass("hide");
-        $(".content-wrapper").toggleClass("hide")
+        $(".content-wrapper").toggleClass("hide");
+    });
+
+    // Hide left menu on screens smaller than 990px when window is resized
+    $(window).resize(function () {
+        if ($(window).width() <= 990) {
+            $(".left-menu").addClass("hide");
+            $(".content-wrapper").removeClass("hide");
+        }
     });
 });
+
+
 // const toggleBarIcon = document.querySelector(".fa-bars-staggered");
 // const sideBar = document.querySelector('.left-menu');
 // const content = document.querySelector('.content-wrapper');
@@ -113,7 +129,7 @@ $(function () {
 
 
 
-//=================Airtime Active step ====================
+//================= Active step ====================
 function goToStep(stepNumber) {
     document.getElementById('step1Container').classList.add('hidden');
     document.getElementById('step2Container').classList.add('hidden');
@@ -154,11 +170,10 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
+// step 1 continue button function
 document.getElementById('continueButton').addEventListener('click', function () {
     loadAndGoToStep(2);
 });
-
-// goToStep(1);
 
 document.addEventListener('DOMContentLoaded', function () {
     var form = document.getElementById('step1Form');
@@ -180,21 +195,56 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-// Display loading spinner
 function loadAndGoToStep(step) {
     document.getElementById('continueButtonLoader').classList.remove('d-none');
 
     setTimeout(function () {
-        // Hide loading spinner
+  
         document.getElementById('continueButtonLoader').classList.add('d-none');
-        // Navigate to the specified step
+     
         goToStep(step);
-    }, 2000); // Adjust the loading time as needed (in milliseconds)
+    }, 2000); 
+}
+
+// step 2 transfer button function
+document.getElementById('transferBtn').addEventListener('click', function () {
+    // Show loading spinner
+    document.getElementById('loadingSpinner').style.display = 'block';
+
+    // Call handlePaymentConfirmation after some delay (simulating a process)
+    setTimeout(function() {
+        handlePaymentConfirmation(3);
+    }, 2000); // Simulate a process delay of 2 seconds (adjust as needed)
+});
+
+function handlePaymentConfirmation(step) {
+    // Simulate the confirmation process (replace with your actual logic)
+    var isPaymentSuccessful = confirm("Is the payment successful?");
+    
+    if (isPaymentSuccessful) {
+        // Hide the loading spinner
+        document.getElementById('loadingSpinner').style.display = 'block';
+
+        // Remove the modal backdrop with opacity
+        document.querySelector('.modal-backdrop').style.opacity = '0';
+
+        // After removing the backdrop, navigate to step3Container
+        loadAndGoToStep(step);
+    } else {
+        // Hide the loading spinner if payment fails
+        document.getElementById('loadingSpinner').style.display = 'none';
+
+        // Handle case when payment fails (optional)
+        alert("Payment failed. Please try again.");
+    }
 }
 
 
 
-// -------------payment modal
+
+
+
+// -------------payment modal------------
 $(document).ready(function () {
     // Menu Toggle Script
     $("#menu-toggle").click(function (e) {
@@ -389,5 +439,31 @@ document.addEventListener("DOMContentLoaded", function () {
             // Hide loader
             loader.style.display = 'none';
         }, 1000); // Simulate a delay of 1 second
+    });
+});
+
+// copy page-----
+document.addEventListener("DOMContentLoaded", function () {
+    // Get copy code element
+    var copyCodeElement = document.getElementById('copyCode');
+    
+    // Add event listener for click on copy code
+    copyCodeElement.addEventListener('click', function () {
+        // Create a temporary textarea element to copy the text
+        var tempTextArea = document.createElement('textarea');
+        tempTextArea.value = document.querySelector('.ussdFont').textContent.trim();
+        document.body.appendChild(tempTextArea);
+        tempTextArea.select();
+        document.execCommand('copy');
+        document.body.removeChild(tempTextArea);
+
+        // Show copy notification
+        var copyActionWrapper = document.querySelector('.copy-action-wrapper');
+        copyActionWrapper.style.display = 'block';
+
+        // Hide the notification after 2 seconds
+        setTimeout(function () {
+            copyActionWrapper.style.display = 'none';
+        }, 2000);
     });
 });

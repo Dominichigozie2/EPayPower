@@ -400,6 +400,9 @@ ul#sidebar li a .side-icon {
 }
 
 @media screen and (max-width: 520px){
+    .left-menu .side-logout {
+        margin-bottom: 7rem!important;
+    }
     .footer-section{
         display: block!important;
         align-items: center!important;
